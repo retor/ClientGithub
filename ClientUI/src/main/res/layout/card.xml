@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/avatar" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/avtor"
+            android:textColor="@color/card_undobar_material_text_color"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/forks"
+            android:layout_alignStart="@+id/forks"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/forks"
+            android:layout_alignBottom="@+id/avatar"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/card_undobar_material_text_color"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/watchers"
+            android:textColor="@color/card_undobar_material_text_color"
+            android:layout_toRightOf="@+id/avtor"
+            android:layout_toEndOf="@+id/avtor"
+            android:layout_alignBottom="@+id/forks"/>
+
+    <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/git_eye"
+            android:layout_alignTop="@+id/watchers"
+            android:layout_toLeftOf="@+id/watchers"
+            android:layout_toStartOf="@+id/watchers"/>
+
+    <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/git_branch"
+            android:layout_alignTop="@+id/forks"
+            android:layout_toRightOf="@+id/forks"
+            android:layout_toEndOf="@+id/forks"/>
+
+</RelativeLayout>
